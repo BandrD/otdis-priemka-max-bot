@@ -1,0 +1,42 @@
+# --- секреты ---
+.env
+.env.*
+!.env.example
+
+# --- внутренняя документация ---
+План_действий.md
+Архитектура.md
+_tz_extract.txt
+_tz_full_extract.txt
+_tz_contract_ocr.txt
+_pdf_pages.txt
+_ocr_pages/
+*.pdf
+*.docx
+
+# --- venv / python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+data/
+
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+.~lock.*

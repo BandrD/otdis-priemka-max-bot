@@ -1,0 +1,558 @@
+{
+  "root_id": "Q0",
+  "faq_url": "https://www.otdis.ru/abitur/faq-abitur/",
+  "site_url": "https://www.otdis.ru/",
+  "nodes": {
+    "Q0": {
+      "id": "Q0",
+      "title": "Приёмная комиссия OTDIS",
+      "text": "Выберите тему:",
+      "children": [
+        {"label": "Правила поступления", "target": "rules"},
+        {"label": "Приёмная комиссия", "target": "priemka"},
+        {"label": "Зачисление", "target": "enroll"},
+        {"label": "Направления", "target": "directions"},
+        {"label": "Доп. вопросы", "target": "extra"},
+        {"label": "Не нашли ответ?", "target": "fallback"}
+      ]
+    },
+
+    "rules": {
+      "id": "rules",
+      "title": "Правила поступления",
+      "parent": "Q0",
+      "children": [
+        {"label": "Кто может поступить", "target": "rules_who"},
+        {"label": "Льготные категории", "target": "rules_benefits"},
+        {"label": "Первоочередное право", "target": "rules_priority"}
+      ]
+    },
+    "rules_who": {
+      "id": "rules_who",
+      "title": "Кто может поступить",
+      "parent": "rules",
+      "payload": {
+        "type": "text",
+        "text": "• Приём ведётся на основании аттестата об окончании **9 класса**.\n• Лица, окончившие 9 класс с **ОВЗ** — отдельное направление «Швея», срок обучения **1 год 10 месяцев**, адаптированные программы.\n• Люди с инвалидностью **1, 2, 3 группы**."
+      }
+    },
+    "rules_benefits": {
+      "id": "rules_benefits",
+      "title": "Льготные категории граждан",
+      "parent": "rules",
+      "payload": {
+        "type": "text",
+        "text": "Победители и участники чемпионатов:\n• «Абилимпикс»\n• «Профессионалы»\n• «АртМастерс»\n\nЧемпионы Олимпийских, Паралимпийских, Сурдлимпийских игр и других крупных спортивных соревнований.\n\nУчастники СВО и дети участников СВО."
+      }
+    },
+    "rules_priority": {
+      "id": "rules_priority",
+      "title": "Первоочередное право на поступление",
+      "parent": "rules",
+      "payload": {
+        "type": "text",
+        "text": "• Дети-сироты и дети без попечения родителей\n• Дети погибших военных и сотрудников силовых структур\n• Дети-инвалиды I и II групп\n• Абитуриенты до 20 лет, имеющие одного родителя-инвалида I группы, если доход семьи ниже прожиточного минимума"
+      }
+    },
+
+    "priemka": {
+      "id": "priemka",
+      "title": "Приёмная комиссия",
+      "parent": "Q0",
+      "children": [
+        {"label": "Сроки и график", "target": "priemka_schedule"},
+        {"label": "Как подать документы", "target": "priemka_submit"},
+        {"label": "Необходимые документы", "target": "priemka_docs"},
+        {"label": "Вступительные испытания", "target": "exams"},
+        {"label": "Контакты", "target": "priemka_contacts"}
+      ]
+    },
+    "priemka_schedule": {
+      "id": "priemka_schedule",
+      "title": "Сроки работы приёмной комиссии",
+      "parent": "priemka",
+      "children": [
+        {"label": "Период работы", "target": "priemka_period"},
+        {"label": "График по дням", "target": "priemka_hours"}
+      ]
+    },
+    "priemka_period": {
+      "id": "priemka_period",
+      "title": "Период работы",
+      "parent": "priemka_schedule",
+      "payload": {
+        "type": "text",
+        "text": "Приёмная комиссия работает с **20 июня по 15 августа**."
+      }
+    },
+    "priemka_hours": {
+      "id": "priemka_hours",
+      "title": "График работы",
+      "parent": "priemka_schedule",
+      "payload": {
+        "type": "text",
+        "text": "• Понедельник–пятница: **09:00–16:00**\n• Суббота: **10:00–14:00**"
+      }
+    },
+    "priemka_submit": {
+      "id": "priemka_submit",
+      "title": "Как подать документы",
+      "parent": "priemka",
+      "children": [
+        {"label": "Лично", "target": "priemka_submit_offline"},
+        {"label": "Онлайн", "target": "priemka_submit_online"}
+      ]
+    },
+    "priemka_submit_offline": {
+      "id": "priemka_submit_offline",
+      "title": "Лично",
+      "parent": "priemka_submit",
+      "payload": {
+        "type": "text",
+        "text": "Лично по адресу: г. Екатеринбург, **пер. Красный, 3**, 1 этаж."
+      }
+    },
+    "priemka_submit_online": {
+      "id": "priemka_submit_online",
+      "title": "Онлайн",
+      "parent": "priemka_submit",
+      "payload": {
+        "type": "text",
+        "text": "Через портал **Госуслуг** или **личный кабинет абитуриента**."
+      }
+    },
+    "priemka_docs": {
+      "id": "priemka_docs",
+      "title": "Необходимые документы",
+      "parent": "priemka",
+      "payload": {
+        "type": "text",
+        "text": "• Паспорт (оригинал и 2 копии)\n• Аттестат (оригинал / заверенная копия + 2 обычные копии)\n• Фото 3×4 — 4 шт. (подписать на обороте)\n• Медицинская справка (форма 086) с флюорографией за 2025 год\n• СНИЛС (2 копии)\n• Прививочный сертификат (оригинал и копия)\n• Медицинский полис (2 копии)\n• Документы об инвалидности или ОВЗ (если есть)\n• Заключение ПМК для лиц с ОВЗ и инвалидов\n• Документы о льготах (если применимы)\n• ИНН (копия)"
+      }
+    },
+    "priemka_contacts": {
+      "id": "priemka_contacts",
+      "title": "Контактные данные",
+      "parent": "priemka",
+      "payload": {
+        "type": "text",
+        "text": "• Телефон: **(343) 378-17-25** (доб. 25)\n• E-mail: **postupi@otdis.ru**\n• Сайт: https://www.otdis.ru/\n• Адрес: г. Екатеринбург, пер. Красный, 3, 1 этаж"
+      }
+    },
+
+    "exams": {
+      "id": "exams",
+      "title": "Вступительные испытания",
+      "parent": "priemka",
+      "children": [
+        {"label": "Конструирование / лёгкая промышленность", "target": "exam_construct"},
+        {"label": "Реклама", "target": "exam_ads"},
+        {"label": "Дизайн в СМИ и полиграфии", "target": "exam_design"},
+        {"label": "Критерии и примеры работ", "target": "exam_criteria"}
+      ]
+    },
+    "exam_construct": {
+      "id": "exam_construct",
+      "title": "Конструирование, моделирование…",
+      "parent": "exams",
+      "payload": {
+        "type": "text",
+        "text": "Направление «Конструирование, моделирование и технология изготовления изделий лёгкой промышленности»:\n\n**Рисунок карандашом**\nДаты экзамена: **08.08, 11.08, 12.08**."
+      }
+    },
+    "exam_ads": {
+      "id": "exam_ads",
+      "title": "Реклама",
+      "parent": "exams",
+      "payload": {
+        "type": "text",
+        "text": "Направление «Реклама»:\n\n**Рисунок карандашом**\nДаты экзамена: **08.08, 11.08, 12.08**."
+      }
+    },
+    "exam_design": {
+      "id": "exam_design",
+      "title": "Дизайн в СМИ и полиграфии",
+      "parent": "exams",
+      "payload": {
+        "type": "text",
+        "text": "Направление «Дизайн в СМИ и полиграфии»:\n\n**Живопись красками**\nДаты экзамена: **07.08, 13.08**."
+      }
+    },
+    "exam_criteria": {
+      "id": "exam_criteria",
+      "title": "Критерии оценки и примеры работ",
+      "parent": "exams",
+      "payload": {
+        "type": "link",
+        "text": "Критерии оценки и примеры работ — на сайте:",
+        "url": "https://www.otdis.ru/abitur/spo/"
+      }
+    },
+
+    "enroll": {
+      "id": "enroll",
+      "title": "Правила зачисления",
+      "parent": "Q0",
+      "children": [
+        {"label": "Формы обучения", "target": "enroll_forms"},
+        {"label": "Сроки обучения", "target": "enroll_duration"},
+        {"label": "Как проходит зачисление", "target": "enroll_how"},
+        {"label": "Рейтинги поступающих", "target": "enroll_rating"}
+      ]
+    },
+    "enroll_forms": {
+      "id": "enroll_forms",
+      "title": "Формы обучения",
+      "parent": "enroll",
+      "children": [
+        {"label": "Платная", "target": "enroll_paid"},
+        {"label": "Бюджетная", "target": "enroll_budget"}
+      ]
+    },
+    "enroll_paid": {
+      "id": "enroll_paid",
+      "title": "Платная форма",
+      "parent": "enroll_forms",
+      "children": [
+        {"label": "Стоимость", "target": "enroll_paid_cost"},
+        {"label": "Направления на платной основе", "target": "enroll_paid_dirs"},
+        {"label": "Образовательный кредит", "target": "enroll_credit"}
+      ]
+    },
+    "enroll_paid_cost": {
+      "id": "enroll_paid_cost",
+      "title": "Стоимость",
+      "parent": "enroll_paid",
+      "payload": {
+        "type": "text",
+        "text": "От **95 000 рублей** в год."
+      }
+    },
+    "enroll_paid_dirs": {
+      "id": "enroll_paid_dirs",
+      "title": "Направления на платной основе",
+      "parent": "enroll_paid",
+      "payload": {
+        "type": "text",
+        "text": "• «Банковское дело» — **25** мест\n• «Реклама» — **25** мест\n• «Дизайн в СМИ и полиграфии» — **25** мест"
+      }
+    },
+    "enroll_credit": {
+      "id": "enroll_credit",
+      "title": "Образовательный кредит",
+      "parent": "enroll_paid",
+      "payload": {
+        "type": "link",
+        "text": "Информация об образовательном кредите (Сбер):",
+        "url": "https://www.sberbank.com/ru/person/credits/money/credit_na_obrazovanie"
+      }
+    },
+    "enroll_budget": {
+      "id": "enroll_budget",
+      "title": "Бюджетная форма",
+      "parent": "enroll_forms",
+      "children": [
+        {"label": "Стоимость", "target": "enroll_budget_cost"},
+        {"label": "Как поступить", "target": "enroll_budget_how"},
+        {"label": "Направления с бюджетными местами", "target": "enroll_budget_dirs"}
+      ]
+    },
+    "enroll_budget_cost": {
+      "id": "enroll_budget_cost",
+      "title": "Стоимость (бюджет)",
+      "parent": "enroll_budget",
+      "payload": {
+        "type": "text",
+        "text": "Обучение **за счёт государства**."
+      }
+    },
+    "enroll_budget_how": {
+      "id": "enroll_budget_how",
+      "title": "Как поступить на бюджет",
+      "parent": "enroll_budget",
+      "children": [
+        {"label": "По среднему баллу аттестата", "target": "enroll_avg_score"},
+        {"label": "Вступительные экзамены", "target": "enroll_budget_exams"}
+      ]
+    },
+    "enroll_avg_score": {
+      "id": "enroll_avg_score",
+      "title": "Средний балл аттестата",
+      "parent": "enroll_budget_how",
+      "payload": {
+        "type": "link",
+        "text": "Таблица со средним баллом за прошлые периоды уточняется на сайте приёмной комиссии:",
+        "url": "https://www.otdis.ru/abitur/faq-abitur/",
+        "status": "needs_content"
+      }
+    },
+    "enroll_budget_exams": {
+      "id": "enroll_budget_exams",
+      "title": "Вступительные экзамены",
+      "parent": "enroll_budget_how",
+      "payload": {
+        "type": "text",
+        "text": "На некоторые специальности требуется сдача **творческих вступительных испытаний** (рисунок или живопись)."
+      }
+    },
+    "enroll_budget_dirs": {
+      "id": "enroll_budget_dirs",
+      "title": "Направления с бюджетными местами",
+      "parent": "enroll_budget",
+      "payload": {
+        "type": "text",
+        "text": "• «Мастер по изготовлению швейных изделий» — **75** мест\n• «Оператор промышленного швейного оборудования» — **50** мест\n• «Конструирование, моделирование и технология изготовления изделий лёгкой промышленности» — **50** мест"
+      }
+    },
+    "enroll_duration": {
+      "id": "enroll_duration",
+      "title": "Сроки обучения",
+      "parent": "enroll",
+      "children": [
+        {"label": "Дизайн по отраслям", "target": "dur_design_ind"},
+        {"label": "Оператор швейного оборудования", "target": "dur_operator"},
+        {"label": "Мастер швейных изделий", "target": "dur_master"},
+        {"label": "Конструирование / лёгкая промышленность", "target": "dur_construct"},
+        {"label": "Банковское дело", "target": "dur_bank"},
+        {"label": "Дизайн в СМИ и полиграфии", "target": "dur_design_media"},
+        {"label": "Реклама", "target": "dur_ads"}
+      ]
+    },
+    "dur_design_ind": {
+      "id": "dur_design_ind",
+      "title": "Дизайн по отраслям",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**3 года 10 месяцев**"}
+    },
+    "dur_operator": {
+      "id": "dur_operator",
+      "title": "Оператор промышленного швейного оборудования",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**1 год 10 месяцев**"}
+    },
+    "dur_master": {
+      "id": "dur_master",
+      "title": "Мастер по изготовлению швейных изделий",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**1 год 10 месяцев**"}
+    },
+    "dur_construct": {
+      "id": "dur_construct",
+      "title": "Конструирование / лёгкая промышленность",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**2 года 10 месяцев**"}
+    },
+    "dur_bank": {
+      "id": "dur_bank",
+      "title": "Банковское дело",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**3 года 10 месяцев**"}
+    },
+    "dur_design_media": {
+      "id": "dur_design_media",
+      "title": "Дизайн в СМИ и полиграфии",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**4 года 10 месяцев**"}
+    },
+    "dur_ads": {
+      "id": "dur_ads",
+      "title": "Реклама",
+      "parent": "enroll_duration",
+      "payload": {"type": "text", "text": "**5 лет 10 месяцев**"}
+    },
+    "enroll_how": {
+      "id": "enroll_how",
+      "title": "Как проходит зачисление",
+      "parent": "enroll",
+      "children": [
+        {"label": "На сайте", "target": "enroll_how_site"},
+        {"label": "На стенде", "target": "enroll_how_stand"}
+      ]
+    },
+    "enroll_how_site": {
+      "id": "enroll_how_site",
+      "title": "На сайте",
+      "parent": "enroll_how",
+      "payload": {
+        "type": "text",
+        "text": "**16 августа** списки публикуются на сайте https://www.otdis.ru/"
+      }
+    },
+    "enroll_how_stand": {
+      "id": "enroll_how_stand",
+      "title": "На стенде",
+      "parent": "enroll_how",
+      "payload": {
+        "type": "text",
+        "text": "**16 августа** — на стенде по адресу пер. Красный, 3, 1 этаж."
+      }
+    },
+    "enroll_rating": {
+      "id": "enroll_rating",
+      "title": "Рейтинги поступающих",
+      "parent": "enroll",
+      "payload": {
+        "type": "text",
+        "text": "После начала работы приёмной комиссии сначала раз в несколько дней, потом каждый день формируются и выкладываются рейтинговые списки абитуриентов на основании **среднего балла аттестата**.\n\nПосле вступительных испытаний — результаты по системе **зачёт / незачёт**.\n\nФинальные списки рекомендованных к зачислению публикуются на сайте и вывешиваются на стендах **16 августа**."
+      }
+    },
+
+    "directions": {
+      "id": "directions",
+      "title": "Направления для поступления",
+      "parent": "Q0",
+      "children": [
+        {"label": "Доступные профили", "target": "dir_profiles"},
+        {"label": "Конкурс среди абитуриентов", "target": "dir_contest"}
+      ]
+    },
+    "dir_profiles": {
+      "id": "dir_profiles",
+      "title": "Доступные профили",
+      "parent": "directions",
+      "children": [
+        {"label": "Швейный", "target": "dir_sewing"},
+        {"label": "Финансы", "target": "dir_finance"},
+        {"label": "Другое", "target": "dir_other"}
+      ]
+    },
+    "dir_sewing": {
+      "id": "dir_sewing",
+      "title": "Швейный профиль",
+      "parent": "dir_profiles",
+      "payload": {
+        "type": "text",
+        "text": "• «Мастер по изготовлению швейных изделий»\n• «Оператор промышленного швейного оборудования»\n• «Конструирование, моделирование и технология изготовления изделий лёгкой промышленности»"
+      }
+    },
+    "dir_finance": {
+      "id": "dir_finance",
+      "title": "Финансы",
+      "parent": "dir_profiles",
+      "payload": {
+        "type": "text",
+        "text": "• «Банковское дело»"
+      }
+    },
+    "dir_other": {
+      "id": "dir_other",
+      "title": "Другое",
+      "parent": "dir_profiles",
+      "payload": {
+        "type": "text",
+        "text": "• «Дизайн в СМИ и полиграфии»\n• «Реклама»"
+      }
+    },
+    "dir_contest": {
+      "id": "dir_contest",
+      "title": "Конкурс среди абитуриентов",
+      "parent": "directions",
+      "children": [
+        {"label": "Творческие испытания", "target": "exams"},
+        {"label": "Средний балл по направлениям", "target": "dir_avg"}
+      ]
+    },
+    "dir_avg": {
+      "id": "dir_avg",
+      "title": "Средний балл",
+      "parent": "dir_contest",
+      "payload": {
+        "type": "link",
+        "text": "Актуальные проходные / средние баллы по направлениям («Мастер…», «Оператор…», «Банковское дело» и др.) публикуются на сайте:",
+        "url": "https://www.otdis.ru/abitur/faq-abitur/",
+        "status": "needs_content"
+      }
+    },
+
+    "extra": {
+      "id": "extra",
+      "title": "Дополнительные вопросы",
+      "parent": "Q0",
+      "children": [
+        {"label": "Общежитие", "target": "extra_dorm"},
+        {"label": "Подготовительные курсы", "target": "extra_courses"}
+      ]
+    },
+    "extra_dorm": {
+      "id": "extra_dorm",
+      "title": "Общежитие",
+      "parent": "extra",
+      "payload": {
+        "type": "text",
+        "text": "Своего общежития у техникума **нет**."
+      }
+    },
+    "extra_courses": {
+      "id": "extra_courses",
+      "title": "Подготовительные курсы",
+      "parent": "extra",
+      "children": [
+        {"label": "Дата", "target": "courses_date"},
+        {"label": "Стоимость", "target": "courses_cost"},
+        {"label": "Подробная информация", "target": "courses_info"},
+        {"label": "Форма заявки", "target": "courses_form"}
+      ]
+    },
+    "courses_date": {
+      "id": "courses_date",
+      "title": "Дата курсов",
+      "parent": "extra_courses",
+      "payload": {"type": "text", "text": "**Конец июля**."}
+    },
+    "courses_cost": {
+      "id": "courses_cost",
+      "title": "Стоимость курсов",
+      "parent": "extra_courses",
+      "payload": {"type": "text", "text": "**12 000 руб.**"}
+    },
+    "courses_info": {
+      "id": "courses_info",
+      "title": "Подробная информация",
+      "parent": "extra_courses",
+      "payload": {
+        "type": "link",
+        "text": "Подробности о подготовительных курсах (рисунок и живопись):",
+        "url": "https://www.otdis.ru/courses/kursy-fotografii/podgotovitelnye-kursy-risunok-i-zhivopis/"
+      }
+    },
+    "courses_form": {
+      "id": "courses_form",
+      "title": "Форма заявки",
+      "parent": "extra_courses",
+      "payload": {
+        "type": "link",
+        "text": "Форма заявки на курсы:",
+        "url": "https://www.otdis.ru/courses/kursy-fotografii/podgotovitelnye-kursy-risunok-i-zhivopis/"
+      }
+    },
+
+    "fallback": {
+      "id": "fallback",
+      "title": "Не нашли ответ?",
+      "parent": "Q0",
+      "children": [
+        {"label": "База знаний на сайте", "target": "fallback_faq"},
+        {"label": "Задать вопрос GigaChat", "target": "fallback_gigachat"}
+      ]
+    },
+    "fallback_faq": {
+      "id": "fallback_faq",
+      "title": "База знаний",
+      "parent": "fallback",
+      "payload": {
+        "type": "link",
+        "text": "Посмотрите ответ в базе знаний абитуриента:",
+        "url": "https://www.otdis.ru/abitur/faq-abitur/"
+      }
+    },
+    "fallback_gigachat": {
+      "id": "fallback_gigachat",
+      "title": "GigaChat",
+      "parent": "fallback",
+      "payload": {
+        "type": "gigachat",
+        "text": "Напишите вопрос **вне сценария** — ответит GigaChat (если ключ включён)."
+      }
+    }
+  }
+}
